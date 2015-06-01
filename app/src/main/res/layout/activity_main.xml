@@ -26,7 +26,8 @@
         android:layout_height="wrap_content"
         android:background="#F08C35"
         android:layout_marginBottom="10dp"
-        android:textColor="#fff"/>
+        android:textColor="#fff"
+        android:onClick="showToast" />
 
     <Button
         android:id="@+id/scores_app_button"
@@ -35,7 +36,8 @@
         android:layout_height="wrap_content"
         android:background="#F08C35"
         android:layout_marginBottom="10dp"
-        android:textColor="#fff"/>
+        android:textColor="#fff"
+        android:onClick="showToast" />
 
     <Button
         android:id="@+id/build_it_bigger_button"
@@ -44,7 +46,8 @@
         android:layout_height="wrap_content"
         android:background="#F08C35"
         android:layout_marginBottom="10dp"
-        android:textColor="#fff"/>
+        android:textColor="#fff"
+        android:onClick="showToast" />
 
     <Button
         android:id="@+id/xyz_reader_button"
@@ -53,7 +56,8 @@
         android:layout_height="wrap_content"
         android:background="#F08C35"
         android:layout_marginBottom="10dp"
-        android:textColor="#fff"/>
+        android:textColor="#fff"
+        android:onClick="showToast" />
 
     <Button
         android:id="@+id/capstone_button"
@@ -62,6 +66,7 @@
         android:layout_height="wrap_content"
         android:background="#CB1541"
         android:layout_marginBottom="10dp"
-        android:textColor="#fff"/>
+        android:textColor="#fff"
+        android:onClick="showToast" />
 
 </LinearLayout>

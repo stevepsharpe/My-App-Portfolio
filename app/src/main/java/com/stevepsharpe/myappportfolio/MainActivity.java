@@ -15,47 +15,26 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
-        Button spotifyStreamerButton = (Button) findViewById(R.id.spotify_streamer_button);
-        spotifyStreamerButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Do something in response to button click
-                Toast.makeText(MainActivity.this, R.string.spotify_streamer_toast, Toast.LENGTH_LONG).show();
-            }
-        });
+    public void showToast(View v) {
+        //Switch based on button ID
+        //Currently they all call displayToast - later they might launch intents
+        switch(v.getId()) {
+            case R.id.spotify_streamer_button:
+            case R.id.scores_app_button:
+            case R.id.build_it_bigger_button:
+            case R.id.xyz_reader_button:
+            case R.id.capstone_button:
+                displayToast(((Button)v).getText().toString());
+                break;
+            default:
+                break;
+        }
+    }
 
-        Button scoresAppButton = (Button) findViewById(R.id.scores_app_button);
-        scoresAppButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Do something in response to button click
-                Toast.makeText(MainActivity.this, R.string.scores_app_toast, Toast.LENGTH_LONG).show();
-            }
-        });
-
-        Button buildItBiggerButton = (Button) findViewById(R.id.build_it_bigger_button);
-        buildItBiggerButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Do something in response to button click
-                Toast.makeText(MainActivity.this, R.string.build_it_bigger_toast, Toast.LENGTH_LONG).show();
-            }
-        });
-
-        Button xyzReaderButton = (Button) findViewById(R.id.xyz_reader_button);
-        xyzReaderButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Do something in response to button click
-                Toast.makeText(MainActivity.this, R.string.xyz_reader_toast, Toast.LENGTH_LONG).show();
-            }
-        });
-
-        Button capstoneButton = (Button) findViewById(R.id.capstone_button);
-        capstoneButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Do something in response to button click
-                Toast.makeText(MainActivity.this, R.string.capstone_toast, Toast.LENGTH_LONG).show();
-            }
-        });
-
+    public void displayToast(String text) {
+        Toast.makeText(this, text, Toast.LENGTH_LONG).show();
     }
 
     @Override
