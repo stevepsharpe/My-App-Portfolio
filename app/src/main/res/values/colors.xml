@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bkgd">#DFEAF1</color>
+    <color name="button_primary">#F08C35</color>
+    <color name="button_secondary">#CB1541</color>
+    <color name="button_text_color">#fff</color>
+</resources>
